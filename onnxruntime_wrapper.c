@@ -29,6 +29,8 @@ typedef struct {
   void *FreeGPUAllocation;
   void *GetD3D12ResourceFromAllocation;
   void *SessionOptionsAppendExecutionProvider_DML2;
+  void *GetDMLDevice;
+  void *GetDMLCommandQueue;
 } DummyOrtDMLAPI;
 
 int SetAPIFromBase(OrtApiBase *api_base) {
